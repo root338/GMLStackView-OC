@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+source 'https://github.com/root338/GMLAreaCalculate-OC.git'
+
+target 'GMLStackViewDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for GMLStackViewDemo
+  pod 'GMLAreaCalculate-OC'
+  
+
+  target 'GMLStackViewDemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'GMLStackViewDemoUITests' do
+    # Pods for testing
+  end
+
+end

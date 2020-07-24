@@ -8,17 +8,21 @@
 
 #import <UIKit/UIKit.h>
 #import "GMLStackViewProtocol.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GMLStackView<__covariant ObjectType: UIView *> : UIView
+<GMLStackViewProtocol>
 
 @property(nonatomic, readonly, copy) NSArray<__kindof ObjectType> *arrangedSubviews;
 
 @property(nonatomic) UIEdgeInsets insets;
 @property(nonatomic) CGFloat spacing;
-@property(nonatomic) UILayoutConstraintAxis axis;
-@property(nonatomic) UIStackViewDistribution distribution;
-@property(nonatomic) UIStackViewAlignment alignment;
+
+@property(nonatomic) GMLAxis axis;
+@property(nonatomic) GMLAxisDirection axisDirection;
+@property(nonatomic) GMLStackViewDistribution distribution;
+@property(nonatomic) GMLStackViewAlignment alignment;
 /// 忽略隐藏的视图，设置为 YES 时，子视图的布局会忽略隐藏视图
 @property(nonatomic) BOOL ignoreHiddenView;
 

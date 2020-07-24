@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGSize expectedSize;
 /// 需要更新期望大小
 @property (nonatomic, assign) BOOL needUpdateExpectedSize;
+/// 关联的视图
+@property (nullable, nonatomic, weak) UIView *linkView;
 @end
 
 NS_ASSUME_NONNULL_END
