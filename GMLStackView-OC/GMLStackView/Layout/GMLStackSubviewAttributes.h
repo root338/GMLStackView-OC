@@ -10,13 +10,19 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GMLStackSubviewAttributes : NSObject
+typedef NS_ENUM(NSInteger, GMLStackSubviewAreaStatus) {
+    GMLStackSubviewAreaStatusNotCalculated,
+    GMLStackSubviewAreaStatusNormal,
+    GMLStackSubviewAreaStatusOutArea,
+};
+
+@interface GMLStackSubviewAttributes : NSObject<NSCopying>
+/// 视图超出可用范围
+@property (nonatomic, assign) GMLStackSubviewAreaStatus areaStatus;
 
 @property (nonatomic, assign) UIEdgeInsets insets;
 /// 视图 frame
 @property (nonatomic, assign) CGRect frame;
-/// 视图占的总区域，frame + insets + 其它内部对外间距
-@property (nonatomic, assign) CGRect occupiedArea;
 /// 计算的期望大小
 @property (nonatomic, assign) CGSize expectedSize;
 /// 需要更新期望大小

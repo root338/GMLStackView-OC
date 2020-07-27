@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable, nonatomic, weak) UIView<GMLStackViewProtocol> *stackView;
 
-- (void)updateLayoutWithSize:(CGSize)size;
+- (void)setContentLayoutWithSize:(CGSize)size;
 - (CGSize)sizeThatFits:(CGSize)size;
 
 @end

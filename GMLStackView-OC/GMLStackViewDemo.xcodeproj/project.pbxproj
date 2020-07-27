@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1865FD5024CEAE8D0070C8B0 /* GMLStackLayoutHelper+GMLPrivateAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865FD4F24CEAE8D0070C8B0 /* GMLStackLayoutHelper+GMLPrivateAdd.m */; };
 		188AB82624C573DB001BC922 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 188AB82524C573DB001BC922 /* AppDelegate.m */; };
 		188AB82924C573DB001BC922 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 188AB82824C573DB001BC922 /* SceneDelegate.m */; };
 		188AB82C24C573DB001BC922 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188AB82B24C573DB001BC922 /* ViewController.m */; };
@@ -22,7 +23,7 @@
 		188AB86924C6E00A001BC922 /* UIView+GMLStackAddExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 188AB86824C6E00A001BC922 /* UIView+GMLStackAddExtension.m */; };
 		188AB86C24C6E7C2001BC922 /* GMLStackLayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 188AB86B24C6E7C2001BC922 /* GMLStackLayoutHelper.m */; };
 		188AB86F24C6EABA001BC922 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 188AB86E24C6EABA001BC922 /* Default-568h@2x.png */; };
-		188AB87324C6F51F001BC922 /* GMLStackViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 188AB87224C6F51F001BC922 /* GMLStackViewInfo.m */; };
+		188AB87324C6F51F001BC922 /* GMLStackViewLayoutInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 188AB87224C6F51F001BC922 /* GMLStackViewLayoutInfo.m */; };
 		645D8FBBCBA8CEBB4FDEBE24 /* Pods_GMLStackViewDemo_GMLStackViewDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DB6CD7DEC01F247B3C1354 /* Pods_GMLStackViewDemo_GMLStackViewDemoUITests.framework */; };
 		8F5C7E95D727BF80438B87A4 /* Pods_GMLStackViewDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453937BA7B13A02A1D65409A /* Pods_GMLStackViewDemoTests.framework */; };
 		B827DA43806369D27A9972D9 /* Pods_GMLStackViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 938E5CA7AC6A0B8411518C3C /* Pods_GMLStackViewDemo.framework */; };
@@ -46,6 +47,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1865FD4624CE7C910070C8B0 /* GMLRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMLRect.h; sourceTree = "<group>"; };
+		1865FD4724CE7C910070C8B0 /* GMLAffineTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMLAffineTransform.h; sourceTree = "<group>"; };
+		1865FD4824CE7C910070C8B0 /* GMLPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMLPoint.h; sourceTree = "<group>"; };
+		1865FD4924CE7C910070C8B0 /* GMLSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMLSize.h; sourceTree = "<group>"; };
+		1865FD4A24CE7C910070C8B0 /* GMLFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMLFloat.h; sourceTree = "<group>"; };
+		1865FD4B24CE7C910070C8B0 /* GMLGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMLGeometry.h; sourceTree = "<group>"; };
+		1865FD4C24CE7C910070C8B0 /* GMLEdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMLEdgeInsets.h; sourceTree = "<group>"; };
+		1865FD4D24CE7C910070C8B0 /* GMLAreaCalculateDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMLAreaCalculateDefine.h; sourceTree = "<group>"; };
+		1865FD4E24CEAE8D0070C8B0 /* GMLStackLayoutHelper+GMLPrivateAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GMLStackLayoutHelper+GMLPrivateAdd.h"; sourceTree = "<group>"; };
+		1865FD4F24CEAE8D0070C8B0 /* GMLStackLayoutHelper+GMLPrivateAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GMLStackLayoutHelper+GMLPrivateAdd.m"; sourceTree = "<group>"; };
 		188AB82124C573DB001BC922 /* GMLStackViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMLStackViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		188AB82424C573DB001BC922 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		188AB82524C573DB001BC922 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -77,8 +88,8 @@
 		188AB86B24C6E7C2001BC922 /* GMLStackLayoutHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMLStackLayoutHelper.m; sourceTree = "<group>"; };
 		188AB86D24C6E883001BC922 /* GMLStackViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMLStackViewProtocol.h; sourceTree = "<group>"; };
 		188AB86E24C6EABA001BC922 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		188AB87124C6F51F001BC922 /* GMLStackViewInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMLStackViewInfo.h; sourceTree = "<group>"; };
-		188AB87224C6F51F001BC922 /* GMLStackViewInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMLStackViewInfo.m; sourceTree = "<group>"; };
+		188AB87124C6F51F001BC922 /* GMLStackViewLayoutInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMLStackViewLayoutInfo.h; sourceTree = "<group>"; };
+		188AB87224C6F51F001BC922 /* GMLStackViewLayoutInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMLStackViewLayoutInfo.m; sourceTree = "<group>"; };
 		188AB87524C6F5A5001BC922 /* GMLStackViewDefineTypeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMLStackViewDefineTypeHeader.h; sourceTree = "<group>"; };
 		2192D2148FF8D5D09AE30279 /* Pods-GMLStackViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMLStackViewDemo.release.xcconfig"; path = "Target Support Files/Pods-GMLStackViewDemo/Pods-GMLStackViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		3F568B84F4616AEC5FAC9A15 /* Pods-GMLStackViewDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMLStackViewDemoTests.release.xcconfig"; path = "Target Support Files/Pods-GMLStackViewDemoTests/Pods-GMLStackViewDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,9 +140,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1865FD4524CE7C910070C8B0 /* GMLAreaCalculate */ = {
+			isa = PBXGroup;
+			children = (
+				1865FD4624CE7C910070C8B0 /* GMLRect.h */,
+				1865FD4724CE7C910070C8B0 /* GMLAffineTransform.h */,
+				1865FD4824CE7C910070C8B0 /* GMLPoint.h */,
+				1865FD4924CE7C910070C8B0 /* GMLSize.h */,
+				1865FD4A24CE7C910070C8B0 /* GMLFloat.h */,
+				1865FD4B24CE7C910070C8B0 /* GMLGeometry.h */,
+				1865FD4C24CE7C910070C8B0 /* GMLEdgeInsets.h */,
+				1865FD4D24CE7C910070C8B0 /* GMLAreaCalculateDefine.h */,
+			);
+			name = GMLAreaCalculate;
+			path = "../GMLAreaCalculate-OC/GMLAreaCalculate";
+			sourceTree = "<group>";
+		};
 		188AB81824C573DA001BC922 = {
 			isa = PBXGroup;
 			children = (
+				1865FD4524CE7C910070C8B0 /* GMLAreaCalculate */,
 				188AB86E24C6EABA001BC922 /* Default-568h@2x.png */,
 				188AB85A24C68EE3001BC922 /* GMLStackView */,
 				188AB82324C573DB001BC922 /* GMLStackViewDemo */,
@@ -210,8 +238,10 @@
 				188AB86124C6C058001BC922 /* GMLStackLayoutProtocol.h */,
 				188AB86A24C6E7C2001BC922 /* GMLStackLayoutHelper.h */,
 				188AB86B24C6E7C2001BC922 /* GMLStackLayoutHelper.m */,
-				188AB87124C6F51F001BC922 /* GMLStackViewInfo.h */,
-				188AB87224C6F51F001BC922 /* GMLStackViewInfo.m */,
+				1865FD4E24CEAE8D0070C8B0 /* GMLStackLayoutHelper+GMLPrivateAdd.h */,
+				1865FD4F24CEAE8D0070C8B0 /* GMLStackLayoutHelper+GMLPrivateAdd.m */,
+				188AB87124C6F51F001BC922 /* GMLStackViewLayoutInfo.h */,
+				188AB87224C6F51F001BC922 /* GMLStackViewLayoutInfo.m */,
 				188AB86324C6C40F001BC922 /* GMLStackSubviewAttributes.h */,
 				188AB86424C6C40F001BC922 /* GMLStackSubviewAttributes.m */,
 			);
@@ -245,7 +275,6 @@
 				4E1ACEC6EDCE76DC272EF7E8 /* Pods-GMLStackViewDemoTests.debug.xcconfig */,
 				3F568B84F4616AEC5FAC9A15 /* Pods-GMLStackViewDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -454,12 +483,13 @@
 			files = (
 				188AB86924C6E00A001BC922 /* UIView+GMLStackAddExtension.m in Sources */,
 				188AB86524C6C40F001BC922 /* GMLStackSubviewAttributes.m in Sources */,
-				188AB87324C6F51F001BC922 /* GMLStackViewInfo.m in Sources */,
+				188AB87324C6F51F001BC922 /* GMLStackViewLayoutInfo.m in Sources */,
 				188AB82C24C573DB001BC922 /* ViewController.m in Sources */,
 				188AB82624C573DB001BC922 /* AppDelegate.m in Sources */,
 				188AB83724C573E1001BC922 /* main.m in Sources */,
 				188AB82924C573DB001BC922 /* SceneDelegate.m in Sources */,
 				188AB86C24C6E7C2001BC922 /* GMLStackLayoutHelper.m in Sources */,
+				1865FD5024CEAE8D0070C8B0 /* GMLStackLayoutHelper+GMLPrivateAdd.m in Sources */,
 				188AB85D24C68F50001BC922 /* GMLStackView.m in Sources */,
 				188AB86024C6BF6A001BC922 /* NSObject+YMTestAdd.m in Sources */,
 			);

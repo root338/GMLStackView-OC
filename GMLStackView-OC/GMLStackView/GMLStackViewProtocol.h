@@ -17,10 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, readonly) UIEdgeInsets insets;
 @property(nonatomic, readonly) CGFloat spacing;
 
-@property(nonatomic) GMLAxis axis;
-@property(nonatomic) GMLAxisDirection axisDirection;
-@property(nonatomic) GMLStackViewDistribution distribution;
-@property(nonatomic) GMLStackViewAlignment alignment;
+@property(nonatomic, readonly) GMLAxis axis;
+@property(nonatomic, readonly) GMLStackViewDistribution distribution;
+@property(nonatomic, readonly) GMLStackViewAlignment alignment;
 /// 忽略隐藏的视图，设置为 YES 时，子视图的布局会忽略隐藏视图
 @property(nonatomic, readonly) BOOL ignoreHiddenView;
 

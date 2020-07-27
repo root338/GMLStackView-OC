@@ -7,10 +7,13 @@
 //
 
 #import "GMLStackView.h"
+#import "GMLStackLayoutHelper.h"
 
 @interface GMLStackView ()
 
 @property (nonatomic, strong) NSMutableArray<UIView *> *mArrangedSubviews;
+
+@property (nonatomic, strong) GMLStackLayoutHelper *helper;
 
 @end
 
@@ -20,6 +23,9 @@
     self = [super initWithFrame:CGRectZero];
     if (self) {
         _mArrangedSubviews = [NSMutableArray arrayWithArray:views?:@[]];
+        for (UIView *view in views) {
+            [self addSubview:view];
+        }
     }
     return self;
 }
@@ -27,6 +33,7 @@
 - (void)addArrangedSubview:(UIView *)view {
     if (view == nil) return;
     [self.mArrangedSubviews addObject:view];
+    [self addSubview:view];
 }
 
 - (void)removeArrangedSubview:(UIView *)view {
@@ -43,13 +50,21 @@
 - (void)insertArrangedSubview:(UIView *)view atIndex:(NSUInteger)stackIndex {
     if (view == nil) return;
     [self.mArrangedSubviews insertObject:view atIndex:stackIndex];
+    [self addSubview:view];
+}
+
+- (void)setCustomSpacing:(CGFloat)spacing afterView:(UIView *)arrangedSubview {
+    
+}
+
+- (CGFloat)customSpacingAfterView:(UIView *)arrangedSubview {
+    return 0;
 }
 
 #pragma mark - override system method
 
 - (CGSize)sizeThatFits:(CGSize)size {
-    
-    return size;
+    return [self.helper sizeThatFits:size];
 }
 
 - (void)willMoveToWindow:(UIWindow *)newWindow {
@@ -60,6 +75,11 @@
 - (void)willMoveToSuperview:(UIView *)newSuperview {
     [super willMoveToSuperview:newSuperview];
     
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    [self.helper setContentLayoutWithSize:self.bounds.size];
 }
 
 #pragma mark - Private
@@ -78,6 +98,14 @@
         _mArrangedSubviews = NSMutableArray.array;
     }
     return _mArrangedSubviews;
+}
+
+- (GMLStackLayoutHelper *)helper {
+    if (_helper == nil) {
+        _helper = GMLStackLayoutHelper.new;
+        _helper.stackView = self;
+    }
+    return _helper;
 }
 
 @end

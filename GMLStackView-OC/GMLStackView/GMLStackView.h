@@ -20,7 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) CGFloat spacing;
 
 @property(nonatomic) GMLAxis axis;
-@property(nonatomic) GMLAxisDirection axisDirection;
 @property(nonatomic) GMLStackViewDistribution distribution;
 @property(nonatomic) GMLStackViewAlignment alignment;
 /// 忽略隐藏的视图，设置为 YES 时，子视图的布局会忽略隐藏视图
